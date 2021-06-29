@@ -28,3 +28,9 @@ class Insegnamento(models.Model):
     class Meta:
         managed = False
         db_table = 'universita_insegnamento'
+
+    def save(self, *args, **kwargs):
+        raise
+
+    def delete(self, *args, **kwargs):
+        raise
